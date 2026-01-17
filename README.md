@@ -268,7 +268,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Herve Tusse**
 
 - GitHub: [@htusse](https://github.com/htusse)
-- Email: your.email@example.com
 
 ## 🙏 Acknowledgments
 
@@ -276,10 +275,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Material-UI](https://mui.com) - React component library
 - [Recharts](https://recharts.org) - Charting library
 - [Netlify](https://netlify.com) - Hosting platform
-
-## 📸 Screenshots
-
-> Add screenshots of your application here to showcase the UI
 
 ---
 
