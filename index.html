@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Flight Search - Find & Compare Flights</title>
+    <meta name="title" content="Flight Search - Find & Compare Flights" />
+    <meta name="description" content="Search, compare, and filter flights with real-time pricing. Explore nearby dates, visualize price trends, and find the best deals. Smart filtering, CO2 estimates, and dark mode support." />
+    <meta name="keywords" content="flight search, cheap flights, flight comparison, airline tickets, travel booking" />
+    <meta name="author" content="Herve Tusse" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Flight Search",
+        "description": "Search, compare, and filter flights with real-time pricing",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Real-time flight search",
+          "Price comparison",
+          "Smart filtering",
+          "CO2 emissions estimate",
+          "Dark mode support"
+        ]
+      }
+    </script>
+    
+    <!-- Theme Color for Mobile -->
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
