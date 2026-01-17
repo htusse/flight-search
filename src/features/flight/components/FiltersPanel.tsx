@@ -337,7 +337,15 @@ const FiltersPanel = ({ flights, filteredCount }: FiltersPanelProps) => {
             />
           )}
         </Box>
-        <FormGroup sx={{ maxHeight: 200, overflowY: 'auto' }}>
+        <FormGroup 
+          sx={{ 
+            flexDirection: 'column', 
+            flexWrap: 'nowrap',
+            '& .MuiFormControlLabel-root': {
+              width: '100%',
+            }
+          }}
+        >
           {availableAirlines.map((airline) => {
             const count = flights.filter((f) =>
               f.airlines.includes(airline)
@@ -358,18 +366,19 @@ const FiltersPanel = ({ flights, filteredCount }: FiltersPanelProps) => {
                     sx={{
                       display: 'flex',
                       justifyContent: 'space-between',
+                      alignItems: 'center',
                       width: '100%',
                       pr: 1,
                     }}
                   >
-                    <Typography variant="body2" noWrap sx={{ maxWidth: 140 }}>
+                    <Typography variant="body2" sx={{ flex: 1 }}>
                       {airline}
                     </Typography>
                     <Chip
                       label={count}
                       size="small"
                       variant="outlined"
-                      sx={{ height: 20, fontSize: '0.7rem' }}
+                      sx={{ height: 20, fontSize: '0.7rem', flexShrink: 0 }}
                     />
                   </Box>
                 }
